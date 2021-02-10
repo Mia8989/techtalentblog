@@ -9,7 +9,7 @@ import javax.persistence.Id;
 //the entity is going to align to data in our database
 //the entire class can be thought of as a table in database
 @Entity
-public class blogpost {
+public class BlogPost {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
@@ -18,7 +18,7 @@ public class blogpost {
     private String blogEntry;
 
 //default constructors are needed to utilize a//the
-public blogpost(String title, String author, String blogEntry) {
+public BlogPost(String title, String author, String blogEntry) {
         this.title = title;
         this.author = author;
         this.blogEntry = blogEntry;
